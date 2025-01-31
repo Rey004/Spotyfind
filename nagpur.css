@@ -1,0 +1,241 @@
+@font-face {
+    font-family: Inter;
+    src: url(Inter-Regular.woff2);
+}
+
+@font-face {
+    font-family: Lilita;
+    src: url(LilitaOne-Regular.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(252, 252, 252);
+}
+
+/* Navbar */
+nav {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    padding: 35px 50px;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.navlogo {
+    width: 45px;
+    height: auto;
+}
+
+.logotext {
+    font-size: 40px;
+    font-weight: 400;
+    font-family: Lilita;
+    text-shadow: 0 0 40px rgb(255, 206, 100, 50%);
+}
+
+/* Information Section  */
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 110px 60px;
+}
+
+.information {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 80px;
+}
+
+.img {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nagpur {
+    width: 100%;
+    border-radius: 40px;
+}
+
+.name {
+    position: absolute;
+    color: white;
+    font-size: 3vw;
+    font-weight: 800;
+    text-shadow: 0 0 40px rgba(0, 0, 0);
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 2.5vw;
+    font-family: Lilita;
+    justify-self: flex-start;
+    font-weight: 500;
+    color: #fe8e01;
+    /* padding-top: 35px; */
+}
+
+.description {
+    font-size: 1.05vw;
+    justify-self: flex-start;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    font-weight: 400;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+b {
+    font-size: 1.1vw;
+    align-self: flex-start;
+    padding-bottom: 20px;
+}
+
+.grid1 {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    margin-bottom: 20px;
+}
+
+.box1 {
+    width: 50%;
+    border: 3px solid black;
+    border-radius: 30px;
+    padding: 25px;
+}
+
+.box2 {
+    width: 50%;
+    border: 3px solid black;
+    border-radius: 30px;
+    padding: 25px;
+}
+
+
+/* Places Section  */
+button[data-filter="dating"]:focus~div:not([class*="dating"]) {
+    display: none;
+}
+
+button[data-filter="study"]:focus~div:not([class*="study"]) {
+    display: none;
+}
+
+button[data-filter="play"]:focus~div:not([class*="play"]) {
+    display: none;
+}
+
+.places-section {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+h3 {
+    font-size: 2.2vw;
+    font-family: Lilita;
+    justify-self: flex-start;
+    font-weight: 500;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.filter {
+    height: 4vh;
+    width: 5vw;
+    border-radius: 40px;
+    font-size: 0.8vw;
+    font-weight: 800;
+    border: 2px solid black;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+#one {
+    background-color: black;
+    color: white;
+}
+
+#one:hover {
+    background-color: #fe8e01;
+    color: white;
+}
+
+#two:hover {
+    background-color: #fe8e01;
+    color: white;
+}
+
+#three:hover {
+    background-color: #fe8e01;
+    color: white;
+}
+
+#four:hover {
+    background-color: #fe8e01;
+    color: white;
+}
+
+#four {
+    margin-right: 50vw;
+}
+.play,.dating,.study {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    height: auto;
+    margin-left: 20px;
+}
+
+.place {
+    width: 100%;
+    border-radius: 40px;
+    margin: 20px;
+}
+
+.placename {
+    position: absolute;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 800;
+    text-shadow: 0 0 20px rgba(0, 0, 0);
+}
+
+.spot{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

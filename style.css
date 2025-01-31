@@ -1,0 +1,204 @@
+@font-face {
+    font-family: Inter;
+    src: url(Inter-Regular.woff2);
+}
+
+@font-face {
+    font-family: Lilita;
+    src: url(LilitaOne-Regular.woff2);
+}
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Inter;
+}
+
+html, body {
+width: 100%;
+height: 100%;
+background-color: rgb(251, 244, 238);
+justify-content: center;
+overflow: hidden;
+}
+
+.grid_boss{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-image: url(Img\ Assets/WorldBG.webp);
+    background-position: center;
+    background-size: cover;
+    opacity: 80%;
+    filter: grayscale(100%);
+}
+
+.grid_bg{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+}
+
+.grid1{
+    width: 50%;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 20%;
+}
+.grid3{
+    width: 50%;
+    height: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 20%;
+}
+.grid2{
+    width: 50%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 20%;
+}
+.grid4{
+    width: 50%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 20%;
+}
+
+/* Navbar */
+nav{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    padding: 35px 50px;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.navlogo{
+    width: 45px;
+    height: auto;
+}
+
+.logotext{
+    font-size: 40px;
+    font-weight: 400;
+    font-family: Lilita;
+    text-shadow: 0 0 40px rgb(255, 206, 100, 50%);
+}
+
+/* Main  */
+main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.description1{
+    font-size: 9vw;
+    font-weight: 500;
+    font-family: Lilita;
+    color: #fe8e01;
+    text-shadow: 0 0 30px rgba(0, 0, 0,0.7);
+    z-index: 99;
+}
+
+.description2{
+    font-size: 2vw;
+    font-weight: 900;
+    font-family: Lilita;
+    color: black;
+    z-index: 99;
+}
+
+button{
+    background-color: #fe8e01;
+    color: #000;
+    width: 180px;
+    height: 60px;
+    border-radius: 30px;
+    margin-top: 50px;
+    z-index: 99;
+    box-shadow: 0 0 30px rgba(0, 0, 0,1);
+}
+
+a{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 50px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* decoration  */
+.blur{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+.blur1{
+    position: absolute;
+    height: 50vh;
+    width: 50vh;
+    background-color: rgb(251, 244, 238);
+    border-radius: 50%;
+    filter: blur(150px);
+    right: 0;
+    top: 0;
+}
+.blur2{
+    position: absolute;
+    height: 50vh;
+    width: 50vh;
+    background-color: rgb(251, 244, 238);
+    border-radius: 50%;
+    filter: blur(100px);
+    left: 0;
+    bottom: 0px;
+}
+.blur3{
+    position: absolute;
+    height: 40vh;
+    width: 40vh;
+    background-color: #fe8e01;
+    border-radius: 50%;
+    filter: blur(300px);
+    left: 0;
+    top: 0;
+}
+.blur4{
+    position: absolute;
+    height: 40vh;
+    width: 40vh;
+    background-color: #fe8e01;
+    border-radius: 50%;
+    filter: blur(300px);
+    right: 0;
+    bottom: 0;
+}
